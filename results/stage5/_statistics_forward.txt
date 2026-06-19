@@ -1,0 +1,43 @@
+
+======================================================================
+SUMMARY STATISTICS (assisted_forward_progress)
+======================================================================
+              count       mean       std        min        25%        50%         75%         max        cv
+fitness_mode                                                                                               
+F0             15.0  96.752719  2.614536  93.294474  94.972877  95.953755   98.137563  102.070408  0.027023
+F1             15.0  95.785375  2.924398  88.938222  95.032962  95.210438   96.653713  102.050448  0.030531
+F2             15.0  98.676811  2.308256  93.708669  97.631087  98.827386  100.215538  102.213982  0.023392
+F3             15.0  96.029301  2.150747  93.587894  94.154860  94.928262   98.043625   99.136916  0.022397
+
+======================================================================
+PAIRWISE COMPARISONS (Wilcoxon + Holm-Bonferroni)
+======================================================================
+Comp        n   Mean1   Mean2     MnΔ     MdΔ      Δ%     p_raw     p_adj       d           95% CI (MdΔ)      Dir  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F1      15   96.75   95.79   -0.97   -0.42   -1.0%  0.524475  0.524475  -0.251     [  -2.56,    1.41]    worse   ns
+F1→F2      15   95.79   98.68   +2.89   +3.13   +3.0%  0.012451  0.024902   0.684     [   1.01,    3.77]   better    *
+F2→F3      15   98.68   96.03   -2.65   -2.60   -2.7%  0.008362  0.025085  -0.812     [  -4.83,   -0.67]    worse    *
+
+======================================================================
+SUPPLEMENTARY OVERALL TEST: F0 vs F3 (Wilcoxon, no correction)
+======================================================================
+Answers a different question than the incremental tests:
+'Is the full F3 fitness overall better than F0 baseline?'
+
+Comp                  n   Mean1   Mean2     MnΔ     MdΔ      Δ%         p       d           95% CI (MdΔ)  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F3 (overall)      15   96.75   96.03   -0.72   -0.94   -0.7%  0.524475  -0.205     [  -3.39,    1.38]    worse   ns
+
+======================================================================
+NOTES
+======================================================================
+Metric: assisted_forward_progress (Neutral evaluation from telemetry)
+Computed as: Sum of max(forward_vel, 0) over the episode (higher is better), averaged across repeats.
+MnΔ = Mean difference, MdΔ = Median difference
+d = Cohen's d (paired, ddof=1)
+95% CI computed via bootstrap (1000 iterations) for median difference
+Holm-Bonferroni correction applied across 3 incremental comparisons
+Supplementary F0 vs F3 test reported separately (no correction)
+Significance: *** p<0.001, ** p<0.01, * p<0.05, ns p≥0.05
+
+======================================================================

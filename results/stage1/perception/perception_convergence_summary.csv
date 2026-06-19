@@ -1,0 +1,3 @@
+group,stage,label,threshold,threshold_basis,baseline_stage,n_runs,n_runs_reached,mean_trials_to_threshold,std_trials_to_threshold
+perception,stage1a_random,Random CNN,72.30474360000001,0.90*max(baseline),stage1a_random,15,7,6.571428571428571,12.177262183500622
+perception,stage1b_pretrained,Pretrained CNN,72.30474360000001,0.90*max(baseline),stage1a_random,15,15,1.0666666666666667,0.25819888974716115

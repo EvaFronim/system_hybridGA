@@ -1,0 +1,3 @@
+group,stage,label,threshold,threshold_basis,baseline_stage,n_runs,n_runs_reached,mean_trials_to_threshold,std_trials_to_threshold
+stage2_adapters,stage2a,Evolve CNN Only (adapters),77.2065333,0.90*max(baseline),stage2a,15,15,2.533333333333333,1.8073922282301276
+stage2_adapters,stage2b,Co-evolution (adapters + bp),77.2065333,0.90*max(baseline),stage2a,15,15,2.6666666666666665,1.838736626315031

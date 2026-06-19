@@ -1,0 +1,3 @@
+group,stage,label,n_runs,final_best_mean,final_best_std,final_best_min,final_best_max
+perception,stage1a_random,Random CNN,15,63.43892913333333,15.72734632179183,41.988915,80.338604
+perception,stage1b_pretrained,Pretrained CNN,15,84.28818986666667,0.3085585065785425,83.606528,85.031437

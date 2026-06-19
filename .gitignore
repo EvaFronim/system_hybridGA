@@ -1,0 +1,74 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+wandb/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Test/cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# DonkeyCar / simulator generated data
+data/
+tub/
+tubs/
+models/
+manage.py
+myconfig.py
+config.py
+
+# Local experiment outputs
+outputs/
+runs/
+checkpoints/
+tmp/
+temp/
+
+# Large generated result files
+*.npz
+*.h5
+*.keras
+*.pt
+*.pth
+*.ckpt
+
+# Optional: ignore local videos if you do not want large media in git
+# Uncomment these if you move videos to YouTube/Drive/Git LFS
+# media/*.mp4
+# media/*.mov
+# media/*.avi
+
+# Keep important exported genomes even if .npy is globally ignored elsewhere
+!genomes/thebest_genome.npy
+!genomes/thebest_genome.json

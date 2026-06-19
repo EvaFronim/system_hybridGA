@@ -1,0 +1,4 @@
+group,stage,label,tail_pct,n_runs,mean_variance,mean_cv
+stage3_main,stage1b_pretrained,Frozen Pretrained CNN (evolve bp),0.2,15,0.006376822377719606,0.0006085511966226193
+stage3_main,stage2b,Co-evolution (evolve adapters + bp),0.2,15,0.09675473833046944,0.002528127370900429
+stage3_main,stage3_hybrid,Minimal Hybrid (evolve CNN + bp),0.2,15,0.10594840015925672,0.00231664534767496

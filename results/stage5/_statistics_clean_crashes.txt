@@ -1,0 +1,43 @@
+
+======================================================================
+SUMMARY STATISTICS (clean_crashes)
+======================================================================
+              count      mean       std  min  25%  50%  75%  max        cv
+fitness_mode                                                              
+F0             15.0  0.000000  0.000000  0.0  0.0  0.0  0.0  0.0       NaN
+F1             15.0  0.000000  0.000000  0.0  0.0  0.0  0.0  0.0       NaN
+F2             15.0  0.066667  0.179947  0.0  0.0  0.0  0.0  0.6  2.699206
+F3             15.0  0.066667  0.258199  0.0  0.0  0.0  0.0  1.0  3.872983
+
+======================================================================
+PAIRWISE COMPARISONS (Wilcoxon + Holm-Bonferroni)
+======================================================================
+Comp        n   Mean1   Mean2     MnΔ     MdΔ      Δ%     p_raw     p_adj       d           95% CI (MdΔ)      Dir  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F1      15    0.00    0.00   +0.00   +0.00   +0.0%       nan  1.000000   0.000     [   0.00,    0.00]     same   ns
+F1→F2      15    0.00    0.07   +0.07   +0.00   +0.0%  0.179712  0.539137   0.370     [   0.00,    0.00]    worse   ns
+F2→F3      15    0.07    0.07   +0.00   +0.00   +0.0%  1.000000  1.000000   0.000     [   0.00,    0.00]     same   ns
+
+======================================================================
+SUPPLEMENTARY OVERALL TEST: F0 vs F3 (Wilcoxon, no correction)
+======================================================================
+Answers a different question than the incremental tests:
+'Is the full F3 fitness overall better than F0 baseline?'
+
+Comp                  n   Mean1   Mean2     MnΔ     MdΔ      Δ%         p       d           95% CI (MdΔ)  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F3 (overall)      15    0.00    0.07   +0.07   +0.00   +0.0%  0.317311   0.258     [   0.00,    0.00]    worse   ns
+
+======================================================================
+NOTES
+======================================================================
+Metric: clean_crashes (Neutral evaluation from telemetry)
+Computed as: Number of hit events under clean_policy_rollout (lower is better), averaged across repeats.
+MnΔ = Mean difference, MdΔ = Median difference
+d = Cohen's d (paired, ddof=1)
+95% CI computed via bootstrap (1000 iterations) for median difference
+Holm-Bonferroni correction applied across 3 incremental comparisons
+Supplementary F0 vs F3 test reported separately (no correction)
+Significance: *** p<0.001, ** p<0.01, * p<0.05, ns p≥0.05
+
+======================================================================

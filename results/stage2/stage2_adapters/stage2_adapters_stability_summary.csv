@@ -1,0 +1,3 @@
+group,stage,label,tail_pct,n_runs,mean_variance,mean_cv
+stage2_adapters,stage2a,Evolve CNN Only (adapters),0.2,15,0.04346934295296837,0.001661715706450652
+stage2_adapters,stage2b,Co-evolution (adapters + bp),0.2,15,0.09675473833046944,0.002528127370900429

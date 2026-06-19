@@ -1,0 +1,4 @@
+group,stage,label,threshold,threshold_basis,baseline_stage,n_runs,n_runs_reached,mean_trials_to_threshold,std_trials_to_threshold
+stage3_main,stage1b_pretrained,Frozen Pretrained CNN (evolve bp),76.62928140000001,0.90*max(baseline),stage2b,15,15,1.0666666666666667,0.25819888974716115
+stage3_main,stage2b,Co-evolution (evolve adapters + bp),76.62928140000001,0.90*max(baseline),stage2b,15,15,2.2666666666666666,1.4375905768565216
+stage3_main,stage3_hybrid,Minimal Hybrid (evolve CNN + bp),76.62928140000001,0.90*max(baseline),stage2b,15,15,1.6,1.0555973258234952

@@ -1,0 +1,4 @@
+group,stage,label,threshold,threshold_basis,baseline_stage,n_runs,n_runs_reached,mean_trials_to_threshold,std_trials_to_threshold
+mechanisms,stage3_hybrid,Minimal Hybrid (evolve CNN + bp),77.18088420000001,0.90*max(baseline),stage3_hybrid,15,15,1.7333333333333334,1.0997835284835873
+mechanisms,stage4a_Stabilized_hybrid,Minimal Hybrid + Trimmed Mean + HoF,77.18088420000001,0.90*max(baseline),stage3_hybrid,15,15,1.5333333333333334,0.915475416434127
+mechanisms,stage4b_Adaptive_hybrid,Minimal Hybrid + Trimmed Mean + HoF + Adaptive Mutation,77.18088420000001,0.90*max(baseline),stage3_hybrid,15,15,1.6,0.8280786712108251

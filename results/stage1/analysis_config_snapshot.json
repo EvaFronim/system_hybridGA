@@ -1,0 +1,40 @@
+{
+  "out": "results/stage1",
+  "auto_discover": false,
+  "logs_root": "logs",
+  "groups_requested": [
+    "perception"
+  ],
+  "stages_loaded": {
+    "stage1a_random": "logs/runs_ga_stage1_randomcnn/trials.csv",
+    "stage1b_pretrained": "logs/runs_ga_stage1_pretrainedcnn/trials.csv",
+    "stage2a": "logs/runs_ga_stage2a_evolve_cnn_only/trials.csv",
+    "stage2b": "logs/runs_ga_stage2b_coevo/trials.csv",
+    "stage3_hybrid": "logs/runs_ga_hybrid_minimal/trials.csv"
+  },
+  "labels": {
+    "stage1a_random": "Random CNN",
+    "stage1b_pretrained": "Pretrained CNN",
+    "stage2a": "Evolve CNN Only (adapters)",
+    "stage2b": "Co-evolution (adapters)",
+    "stage3_hybrid": "Hybrid (Full)"
+  },
+  "groups_effective": {
+    "perception": [
+      "stage1a_random",
+      "stage1b_pretrained"
+    ]
+  },
+  "baseline_overrides": {
+    "perception": "stage1a_random"
+  },
+  "pct_of_baseline": 0.9,
+  "tail_pct": 0.2,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 12345,
+  "convergence_rule": "threshold = 0.9 * max(final_best of baseline runs)",
+  "statistical_test": "Mann-Whitney U, two-sided",
+  "multiple_comparisons_correction": "Holm-Bonferroni",
+  "effect_size": "Cohen's d with bootstrap 95% CI",
+  "padding_policy": "Per-run best_so_far is forward-filled to the global max trial index before averaging, to avoid survivorship bias."
+}

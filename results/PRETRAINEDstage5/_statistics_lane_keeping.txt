@@ -1,0 +1,43 @@
+
+======================================================================
+SUMMARY STATISTICS (assisted_mean_abs_cte)
+======================================================================
+              count      mean       std       min       25%       50%       75%       max        cv
+fitness_mode                                                                                       
+F0             15.0  1.527989  0.371048  1.084568  1.257850  1.522487  1.656640  2.339522  0.242834
+F1             15.0  1.527708  0.319642  1.001655  1.283120  1.569159  1.749702  2.048087  0.209230
+F2             15.0  1.576143  0.345098  1.098751  1.253539  1.729443  1.817844  2.100942  0.218951
+F3             15.0  1.276337  0.301065  0.965966  1.013613  1.140820  1.616574  1.724576  0.235882
+
+======================================================================
+PAIRWISE COMPARISONS (Wilcoxon + Holm-Bonferroni)
+======================================================================
+Comp        n   Mean1   Mean2     MnΔ     MdΔ      Δ%     p_raw     p_adj       d           95% CI (MdΔ)  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F1      15    1.53    1.53   -0.00   -0.00   -0.0%  0.977966  1.000000  -0.001     [  -0.33,    0.11]   ns
+F1→F2      15    1.53    1.58   +0.05   +0.03   +3.2%  0.599487  1.000000   0.115     [  -0.23,    0.42]   ns
+F2→F3      15    1.58    1.28   -0.30   -0.42  -19.0%  0.025574  0.076721  -0.676     [  -0.70,   -0.03]   ns
+
+======================================================================
+SUPPLEMENTARY OVERALL TEST: F0 vs F3 (Wilcoxon, no correction)
+======================================================================
+Answers a different question than the incremental tests:
+'Is the full F3 fitness overall better than F0 baseline?'
+
+Comp                  n   Mean1   Mean2     MnΔ     MdΔ      Δ%         p       d           95% CI (MdΔ)  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F3 (overall)      15    1.53    1.28   -0.25   -0.09  -16.5%  0.063721  -0.504     [  -0.59,    0.01]   ns
+
+======================================================================
+NOTES
+======================================================================
+Metric: assisted_mean_abs_cte (Neutral evaluation from telemetry)
+Computed as: Mean absolute cross-track error per episode (lower is better), averaged across repeats.
+MnΔ = Mean difference, MdΔ = Median difference
+d = Cohen's d (paired, ddof=1)
+95% CI computed via bootstrap (1000 iterations) for median difference
+Holm-Bonferroni correction applied across 3 incremental comparisons
+Supplementary F0 vs F3 test reported separately (no correction)
+Significance: *** p<0.001, ** p<0.01, * p<0.05, ns p≥0.05
+
+======================================================================

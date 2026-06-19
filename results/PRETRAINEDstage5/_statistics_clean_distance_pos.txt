@@ -1,0 +1,43 @@
+
+======================================================================
+SUMMARY STATISTICS (clean_distance_pos)
+======================================================================
+              count      mean       std       min       25%       50%       75%       max        cv
+fitness_mode                                                                                       
+F0             15.0  5.201704  0.245283  4.713471  5.081088  5.186615  5.286856  5.750546  0.047154
+F1             15.0  5.391419  0.601604  5.032375  5.117075  5.238467  5.336537  7.461283  0.111586
+F2             15.0  5.374333  0.696858  4.837861  4.959609  5.166019  5.455966  7.650124  0.129664
+F3             15.0  4.952329  0.464438  4.390547  4.549774  4.725369  5.322737  5.699941  0.093782
+
+======================================================================
+PAIRWISE COMPARISONS (Wilcoxon + Holm-Bonferroni)
+======================================================================
+Comp        n   Mean1   Mean2     MnΔ     MdΔ      Δ%     p_raw     p_adj       d           95% CI (MdΔ)      Dir  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F1      15    5.20    5.39   +0.19   +0.08   +3.6%  0.094604  0.283813   0.373     [   0.00,    0.12]   better   ns
+F1→F2      15    5.39    5.37   -0.02   -0.10   -0.3%  0.561401  1.000000  -0.019     [  -0.22,    0.04]    worse   ns
+F2→F3      15    5.37    4.95   -0.42   -0.38   -7.9%  0.120544  1.000000  -0.460     [  -0.64,    0.35]    worse   ns
+
+======================================================================
+SUPPLEMENTARY OVERALL TEST: F0 vs F3 (Wilcoxon, no correction)
+======================================================================
+Answers a different question than the incremental tests:
+'Is the full F3 fitness overall better than F0 baseline?'
+
+Comp                  n   Mean1   Mean2     MnΔ     MdΔ      Δ%         p       d           95% CI (MdΔ)  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F3 (overall)      15    5.20    4.95   -0.25   -0.43   -4.8%  0.094604  -0.469     [  -0.53,    0.21]    worse   ns
+
+======================================================================
+NOTES
+======================================================================
+Metric: clean_distance_pos (Neutral evaluation from telemetry)
+Computed as: Travelled distance from (x,z) position deltas under clean_policy_rollout (higher is better), averaged across repeats.
+MnΔ = Mean difference, MdΔ = Median difference
+d = Cohen's d (paired, ddof=1)
+95% CI computed via bootstrap (1000 iterations) for median difference
+Holm-Bonferroni correction applied across 3 incremental comparisons
+Supplementary F0 vs F3 test reported separately (no correction)
+Significance: *** p<0.001, ** p<0.01, * p<0.05, ns p≥0.05
+
+======================================================================

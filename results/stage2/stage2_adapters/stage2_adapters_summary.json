@@ -1,0 +1,18 @@
+{
+  "timestamp_utc": "2026-05-19T10:40:38.579346Z",
+  "group": "stage2_adapters",
+  "stages_included": [
+    "stage2a",
+    "stage2b"
+  ],
+  "baseline": "stage2a",
+  "baseline_label": "Evolve CNN Only (adapters)",
+  "convergence_threshold_value": 77.2065333,
+  "convergence_threshold_rule": "0.9 * max(final_best) of baseline runs",
+  "tail_pct_for_stability": 0.2,
+  "statistical_test": "Mann-Whitney U, two-sided",
+  "multiple_comparisons_correction": "Holm-Bonferroni",
+  "effect_size": "Cohen's d (pooled SD, ddof=1)",
+  "effect_size_uncertainty": "Bootstrap percentile 95% CI, 10000 resamples",
+  "ci_curves": "Forward-filled per run; mean +/- 1.96 * SE"
+}

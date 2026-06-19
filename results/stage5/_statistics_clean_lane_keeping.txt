@@ -1,0 +1,43 @@
+
+======================================================================
+SUMMARY STATISTICS (clean_mean_abs_cte)
+======================================================================
+              count      mean       std       min       25%       50%       75%       max        cv
+fitness_mode                                                                                       
+F0             15.0  0.909036  0.033274  0.860739  0.881820  0.924363  0.936033  0.951124  0.036604
+F1             15.0  0.910461  0.057434  0.841935  0.875491  0.904208  0.930766  1.061111  0.063082
+F2             15.0  1.002103  0.273819  0.810528  0.841913  0.850891  1.106189  1.526035  0.273245
+F3             15.0  1.211628  0.277389  0.849082  0.945628  1.235525  1.443027  1.711300  0.228939
+
+======================================================================
+PAIRWISE COMPARISONS (Wilcoxon + Holm-Bonferroni)
+======================================================================
+Comp        n   Mean1   Mean2     MnΔ     MdΔ      Δ%     p_raw     p_adj       d           95% CI (MdΔ)      Dir  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F1      15    0.91    0.91   +0.00   +0.02   +0.2%  0.977966  1.000000   0.021     [  -0.05,    0.05]    worse   ns
+F1→F2      15    0.91    1.00   +0.09   -0.03  +10.1%  0.761536  1.000000   0.324     [  -0.07,   -0.01]    worse   ns
+F2→F3      15    1.00    1.21   +0.21   +0.19  +20.9%  0.041260  0.123779   0.528     [   0.07,    0.51]    worse   ns
+
+======================================================================
+SUPPLEMENTARY OVERALL TEST: F0 vs F3 (Wilcoxon, no correction)
+======================================================================
+Answers a different question than the incremental tests:
+'Is the full F3 fitness overall better than F0 baseline?'
+
+Comp                  n   Mean1   Mean2     MnΔ     MdΔ      Δ%         p       d           95% CI (MdΔ)  Sig
+--------------------------------------------------------------------------------------------------------------
+F0→F3 (overall)      15    0.91    1.21   +0.30   +0.31  +33.3%  0.001526   1.095     [   0.08,    0.57]    worse   **
+
+======================================================================
+NOTES
+======================================================================
+Metric: clean_mean_abs_cte (Neutral evaluation from telemetry)
+Computed as: Mean absolute cross-track error under clean_policy_rollout (lower is better), averaged across repeats.
+MnΔ = Mean difference, MdΔ = Median difference
+d = Cohen's d (paired, ddof=1)
+95% CI computed via bootstrap (1000 iterations) for median difference
+Holm-Bonferroni correction applied across 3 incremental comparisons
+Supplementary F0 vs F3 test reported separately (no correction)
+Significance: *** p<0.001, ** p<0.01, * p<0.05, ns p≥0.05
+
+======================================================================

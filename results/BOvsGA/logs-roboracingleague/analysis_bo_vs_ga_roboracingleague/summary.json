@@ -1,0 +1,68 @@
+{
+  "analysis_timestamp": "2025-12-10T09:36:03.507623Z",
+  "baseline_label": "GA",
+  "variant_label": "BO",
+  "convergence_threshold": 88.63147260000001,
+  "baseline_final_best_mean": 97.4315478,
+  "baseline_final_best_std": 0.1424145641319253,
+  "variant_final_best_mean": 97.94609679999999,
+  "variant_final_best_std": 0.3300402071056106,
+  "baseline_mean_trials_to_threshold": 6.0,
+  "variant_mean_trials_to_threshold": 21.0,
+  "baseline_mean_variance": 0.0029329243291069114,
+  "variant_mean_variance": 0.0034879189368728887,
+  "statistical_tests": [
+    {
+      "metric": "final_best_fitness",
+      "baseline_mean": 97.4315478,
+      "baseline_std": 0.13758554019867245,
+      "variant_mean": 97.94609679999999,
+      "variant_std": 0.31884913217051947,
+      "p_value_ttest": 6.284207004711252e-06,
+      "p_value_mannwhitney": 3.356755084154065e-05,
+      "cohens_d": 2.0954528625437563,
+      "pct_improvement": 0.5281133386654339,
+      "significant_0.05": true,
+      "significant_0.01": true
+    },
+    {
+      "metric": "trials_to_threshold",
+      "baseline_mean": 6.0,
+      "baseline_std": 0.0,
+      "variant_mean": 21.0,
+      "variant_std": 0.0,
+      "p_value_ttest": 0.0,
+      "p_value_mannwhitney": 8.265685662204696e-08,
+      "cohens_d": NaN,
+      "pct_improvement": 250.0,
+      "significant_0.05": true,
+      "significant_0.01": true
+    },
+    {
+      "metric": "stability_variance",
+      "baseline_mean": 0.0029329243291069114,
+      "baseline_std": 0.00676427134791905,
+      "variant_mean": 0.0034879189368728887,
+      "variant_std": 0.006416230727126235,
+      "p_value_ttest": 0.8253601842276181,
+      "p_value_mannwhitney": 0.8836580973445871,
+      "cohens_d": 0.0841851421779228,
+      "pct_improvement": 18.92290920219465,
+      "significant_0.05": false,
+      "significant_0.01": false
+    },
+    {
+      "metric": "stability_cv",
+      "baseline_mean": 0.0003007045263553465,
+      "baseline_std": 0.000467440053945223,
+      "variant_mean": 0.0003508159523223613,
+      "variant_std": 0.0004926709617605178,
+      "p_value_ttest": 0.7845095757555282,
+      "p_value_mannwhitney": 0.8519177555606353,
+      "cohens_d": 0.10435070690291576,
+      "pct_improvement": 16.664672984601985,
+      "significant_0.05": false,
+      "significant_0.01": false
+    }
+  ]
+}

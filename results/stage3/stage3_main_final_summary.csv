@@ -1,0 +1,4 @@
+group,stage,label,n_runs,final_best_mean,final_best_std,final_best_min,final_best_max
+stage3_main,stage1b_pretrained,Frozen Pretrained CNN (evolve bp),15,84.28818986666667,0.3085585065785425,83.606528,85.031437
+stage3_main,stage2b,Co-evolution (evolve adapters + bp),15,83.91576413333334,0.857916979872918,81.620559,85.143646
+stage3_main,stage3_hybrid,Minimal Hybrid (evolve CNN + bp),15,84.91241946666666,0.6538751800052042,83.888943,85.756538

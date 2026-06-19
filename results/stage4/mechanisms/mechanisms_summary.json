@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-05-22T05:05:41.142571Z",
+  "group": "mechanisms",
+  "stages_included": [
+    "stage3_hybrid",
+    "stage4a_Stabilized_hybrid",
+    "stage4b_Adaptive_hybrid"
+  ],
+  "baseline": "stage3_hybrid",
+  "baseline_label": "Minimal Hybrid (evolve CNN + bp)",
+  "convergence_threshold_value": 77.18088420000001,
+  "convergence_threshold_rule": "0.9 * max(final_best) of baseline runs",
+  "tail_pct_for_stability": 0.2,
+  "statistical_test": "Mann-Whitney U, two-sided",
+  "multiple_comparisons_correction": "Holm-Bonferroni",
+  "effect_size": "Cohen's d (pooled SD, ddof=1)",
+  "effect_size_uncertainty": "Bootstrap percentile 95% CI, 10000 resamples",
+  "ci_curves": "Forward-filled per run; mean +/- 1.96 * SE"
+}

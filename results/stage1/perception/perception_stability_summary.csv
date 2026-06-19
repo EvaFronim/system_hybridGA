@@ -1,0 +1,3 @@
+group,stage,label,tail_pct,n_runs,mean_variance,mean_cv
+perception,stage1a_random,Random CNN,0.2,15,0.011324681590406404,0.0009808614894396392
+perception,stage1b_pretrained,Pretrained CNN,0.2,15,0.006376822377719606,0.0006085511966226193

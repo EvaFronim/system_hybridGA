@@ -1,0 +1,4 @@
+group,stage,label,tail_pct,n_runs,mean_variance,mean_cv
+mechanisms,stage3_hybrid,Minimal Hybrid (evolve CNN + bp),0.2,15,0.10594840015925672,0.00231664534767496
+mechanisms,stage4a_Stabilized_hybrid,Minimal Hybrid + Trimmed Mean + HoF,0.2,15,0.020952632640574096,0.001069564624149442
+mechanisms,stage4b_Adaptive_hybrid,Minimal Hybrid + Trimmed Mean + HoF + Adaptive Mutation,0.2,15,0.03830430530458896,0.0010344851071084538
