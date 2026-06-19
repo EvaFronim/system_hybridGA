@@ -521,6 +521,8 @@ project description:
 
 > A staged experimental framework for comparing genetic-algorithm strategies in autonomous navigation, including CNN weight evolution, behavior-parameter optimization, adapter-based co-evolution, hybrid genome representations, stabilization mechanisms, and fitness-function ablations.
 
+Supervisor: Prof. Ioannis Tsamardinos
+
 ---
 
 ## License
